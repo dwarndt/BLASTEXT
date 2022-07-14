@@ -1,0 +1,3 @@
+7/14/22
+-Swapped e-value and query to reflect actual sheets
+-Ran into issue where certain database entries contain semicolons in title, consider more obscure delimiter
