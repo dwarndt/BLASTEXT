@@ -1,0 +1,25 @@
+{
+    "name": "BLASTEXT",
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+        "16": "/assets/icons/16.png",
+        "48": "/assets/icons/48.png",
+        "128": "/assets/icons/128.png"
+        }},
+    "description": "v0.5: easy paste generation \n v1.0: bulk data transfer and storage",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "content_scripts": [
+    {
+        "matches":["https://blast.ncbi.nlm.nih.gov/*"],
+        "js": ["content.js","popup/popup.js"]
+    }
+]
+    
+}
