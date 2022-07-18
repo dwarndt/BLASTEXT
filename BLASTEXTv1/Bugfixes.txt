@@ -2,5 +2,7 @@
 -Swapped e-value and query to reflect actual sheets
 -Ran into issue where certain database entries contain semicolons in title, consider more obscure delimiter
 7/17/22
-Extension pop up and data saving features active
-Can now copy an entire table of results at once
+-Extension pop up and data saving features active
+-Can now copy an entire table of results at once
+7/18/22
+-TO DO: CLC and Eurofins exports with extra stuff, make program cut off anything after an underscore
