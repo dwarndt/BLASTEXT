@@ -1,0 +1,11 @@
+7/14/22
+-Swapped e-value and query to reflect actual sheets
+-Ran into issue where certain database entries contain semicolons in title, consider more obscure delimiter
+7/17/22
+=Extension pop up and data saving features active
+=Can now copy an entire table of results at once
+7/21/22
+-Fixed issues with redundant variables
+-Changed delimiter to tab instead of something weird
+=Save button is now disabled on save command, but does not persist. Attach status to stored accession number (or lack thereof) when populating save button status on page load
+-Less ambigous error message when clearing data

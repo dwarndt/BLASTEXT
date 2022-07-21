@@ -1,0 +1,159 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BLASTEXT V0.5</title>
+    <link rel="stylesheet" href="../css/paintBucket.css">
+    <link rel="stylesheet" href="popup.css">
+  </head>
+
+  <body>
+    
+
+      <h1 id="title">
+        <img style = "vertical-align:middle" src="../assets/icons/72White.svg" alt="Icon" width="48" height="48">
+          <span style = "font-size:48px; vertical-align:middle">BLASTEXT V1</span>
+      </h1>
+
+      <div class="tab">
+        <button class="tablinks" data-id = '0'>Settings</button>
+        <button class="tablinks" data-id = '1'>Output</button>
+      </div>
+
+      <div id="t0" data-id=0 class="tabcontent">
+        <h2 id="subtitle1">
+            Settings
+        </h2>
+        <div class= "field" id= "inputField">
+            <dragItem class="nullItem" id="nullItem1" draggable="false">
+                NO OUTPUT SELECTED  
+            </dragItem>
+          </div>
+          <div class="field">
+              <dragItem class="dragItem" id="dragItem1" draggable="true">
+                  Title   
+              </dragItem>
+              <dragItem class="dragItem" id="dragItem2" draggable="true">
+                  Sci. Name
+              </dragItem>
+              <dragItem class="dragItem" id="dragItem3" draggable="true">
+                  Max
+              </dragItem>
+              <dragItem class="dragItem" id="dragItem4" draggable="true">
+                  Total
+              </dragItem>
+              <dragItem class="dragItem" id="dragItem5" draggable="true">
+                  Query
+              </dragItem>
+              <dragItem class="dragItem" id="dragItem6" draggable="true">
+                  E Value
+              </dragItem>
+              <dragItem class="dragItem" id="dragItem7" draggable="true">
+                  Identity
+              </dragItem>
+              <dragItem class="dragItem" id="dragItem8" draggable="true">
+                  Acc. Len
+              </dragItem>
+              <dragItem class="dragItem" id="dragItem9" draggable="true">
+                  Accession
+              </dragItem>
+          </div>
+        <div>
+            <br>
+        <button style="min-width:706">
+            Clear
+        </button>
+        </div>
+
+        <br>
+        <br>
+        <h2 id="subtitle1">
+            Delimiter
+        </h2>
+        
+        <div class="btn-group">
+        <button style="width:33%">
+            <h2button font-weight="bold">;</h2button>
+        </button>
+        <button style="width:33%">
+            <h2button font-weight="bold">,</h2button>
+        </button>
+        <button style="width:33%">
+            <h2button font-weight="bold">.</h2button>
+        </button>
+        </div>
+      </div>
+
+      <div id="t1" data-id="1" class="tabcontent">
+        <h2 id="subtitle2">
+              Output
+              
+            <button id="delButton" style="float: right;">
+                Clear Data
+            </button>
+
+            <button id="copyButton" style="float: right;">
+                Copy Data
+            </button>
+            
+        </h2>
+        <br>
+        <div id = dataError>
+            <img style = "vertical-align:middle" class = "center" src="../assets/icons/72errorwhite.svg" alt="Icon" width="192" height="192">
+            <title class = "center" id="errorMSG">
+                NO DATA FOUND
+            </title>
+        </div>
+        <div id = clearError>
+            <img style = "vertical-align:middle" class = "center" src="../assets/icons/72refreshwhite.svg" alt="Icon" width="192" height="192">
+            <title class = "center" id="refreshMSG1">
+                REFRESH PAGE TO
+            </title>
+            <title class = "center" id="refreshMSG2">
+                POPULATE TABLE
+            </title>
+        </div>
+        <table id="outputTable">
+            <thead>
+            <tr class="header">
+                <th class="o0" name="sampleName">
+                    Sample Name
+                </th>
+                <th class="o1" name="database">
+                    Database
+                </th>
+                <th class="o2" name="documentName">
+                    Document Name
+                </th>
+                <th class="o3" name="totalScore">
+                    Total Score
+                </th>
+                <th class="o4" name="eValue">
+                    E Value
+                </th>
+                <th class="o5" name="queryCover">
+                    Query Cover
+                </th>
+                <th class="o6" name="percentIdentity">
+                    Percent Identity
+                </th>
+                <th class="o7" name="accessionNumber">
+                    Accession
+                </th>
+            </tr>
+            </thead>
+            <tbody id="outputTableBody"></tbody>
+        </table>
+      </div>
+      
+      
+
+    </div>
+    </body>
+
+    <script src="popup.js">
+    </script>
+  </body>
+
+</html>
