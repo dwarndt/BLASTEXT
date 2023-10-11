@@ -1,0 +1,28 @@
+7/14/22
+-Swapped e-value and query to reflect actual sheets
+-Ran into issue where certain database entries contain semicolons in title, consider more obscure delimiter
+7/17/22
+=Extension pop up and data saving features active
+=Can now copy an entire table of results at once
+7/21/22
+-Fixed issues with redundant variables
+-Changed delimiter to tab instead of something weird
+=Save button is now disabled on save command, but does not persist. Attach status to stored accession number (or lack thereof) when populating save button status on page load
+-Less ambigous error message when clearing data
+7/22/22
+-Index of recalled save button to disable was off by negative 1, replaced "buttonID = i++" with "buttonID = i+1"
+7/29/22
+-Result array is properly refresehed on new instance
+>If results table gets large enough it covers the menu tabs
+>Copy table button still busted
+
+8/8/23
+-Uh. forgot to update this.
+=Publish checker operational, but performance varies depending on Entrez API
+-Everythings cleaned up for my last update.
+	-Tried to get code looking good, got rid of a bunch of redundant or unused stuff.
+-Visual overhaul fixed the overflow issue.
+-Popup Copy button is fixed and operational.
+-Still didn't get to implement custom outputs, but hey, what the hell.
+>Single "Copy" button on NCBI page still kinda weird
++To the next developer: Good luck! Hope you can make someone's life just a bit easier!
